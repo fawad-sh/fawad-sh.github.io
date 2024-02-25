@@ -1,67 +1,69 @@
 <html>
   <head>
-    <style>
-        * {
-          font-family: sans-serif;
-          line-height:1.5;
-          }
-        body 
-           {
-            margin-left:10%;
-            margin-right:10%;
-            margin-top:2rem;
-           }
-    </style>
+    <link rel="stylesheet" href="w3.css">
   </head>
-  <body>
+  <body class="w3-container w3-margin">
+    <div class="w3-panel w3-leftbar w3-blue" >
     <h1>🥇REST API projects portfolio - Fawad I Sheikh</h1>
-    <hr/>
-
-    <ul>
-      <li><a href="#salesforce">Salesforce Integration</a></li>
-      <li><a href="#aeos">AEOS Access control system</a></li>
-      <li><a href="#mobile">Mobile API backend</a></li>
-      <li><a href="#2fa">Two factor authentication</li>
-      <li><a href="#suprema">Suprema facial identification controller</a></li>
-      <li><a href="#visitor">Visitor Access management service - Open API</a></li>
-    </ul>
-    <h2 id="salesforce">🤝 Salesforce CRM integration</h2>
-    <div>
-      <p>I develop the rule engine for Salesforce(CRM) + Access Control System. It is a REST API  solution, request comes in REST API and goes to Access control system in SOAP (XML). Whenever a request a new tennant comes the rule engine take care of tenanat onboarding, its access to main gate, building gate and facilities vice versa when a tenant leaves or the contract expires.</p>
-<p>It is a large scale project for a newly developed city consists of 18000 housing units</p>
-<p><b>Stack: </b>C#, ASP.Net, .Net Framework, Postman, SOAP UI, MS SQL Server</p>
     </div>
     <hr/>
-    <h2 id="aeos">👋 MS Dynamics + EPM Time&Attendance</h2>
+
+    <ul class="w3-margin-bottom">
+      <li class="w3-margin-bottom"><a href="#salesforce">Salesforce Integration</a></li>
+      <li class="w3-margin-bottom"><a href="#aeos">AEOS Access control system</a></li>
+      <li class="w3-margin-bottom"><a href="#mobile">Mobile API backend</a></li>
+      <li class="w3-margin-bottom"><a href="#2fa">Two factor authentication</li>
+      <li class="w3-margin-bottom"><a href="#suprema">Suprema facial identification controller</a></li>
+      <li class="w3-margin-bottom"><a href="#visitor">Visitor Access management service - Open API</a></li>
+    </ul>
+<div class="w3-container w3-border">
+    <h2 class="w3-pannel w3-padding w3-blue" id="salesforce">🤝 Salesforce CRM integration</h2>
+    <div>
+      <p>I develop the rule engine for Salesforce(CRM) + Access Control System. It is a REST API  solution, request comes in REST API and goes to Access control system in SOAP (XML). Whenever a request a new tennant comes the rule engine take care of tenanat onboarding, its access to main gate, building gate and facilities vice versa when a tenant leaves or the contract expires.</p>
+
+ <div class="w3-panel w3-light-grey">
+  <p><em>Sizing: </em>It is an enterprise grade application for a newly build city of 18000 housing units. On the first day of launch it served 6 million API calls.</p>
+</div> 
+    <p><b>Stack: </b>C#, ASP.Net, .Net Framework, Postman, SOAP UI, MS SQL Server</p>
+    </div>
+    <hr/>
+    <h2  class="w3-pannel  w3-padding w3-blue" id="aeos">👋 MS Dynamics + EPM Time & Attendance</h2>
     <div>
       <p>Integrate human resource personnel data from Microsoft Dynamics with Time & Attendance Solution. I develop API to keep HR data sync between theses systems: MS Dynamics, Time & Attendance Solution and Invixium Facial recognition scanners. The HR data is bilingual in English and Arabic language.</p>
 <p><b>Stack: </b>C#, ASP.Net, .Net Framework, Postman, MS SQL Server, AWS</p>
     </div>
-    <h2 id="mobile">🕓 Backend API - Mobile app with Time & Attendance System</h2>
+    <hr/>
+    <h2  class="w3-pannel  w3-padding w3-blue" id="mobile">🕓 Backend API - Mobile app with Time & Attendance System</h2>
     <div>
       <p>I developed a secure REST API accessible from custome mobile app. The client is authenticated using client Identity & Access management system. The API return user attendance hsitory, new leave request and mark users time in and time out. </p>
 <p><b>Stack: </b>C#, ASP.NetCore, .Net Core, Entity framework, Postman, Oracle</p>
     </div>
-    <h2 id="2fa">👀 Two factor authentication</h2>
+    <hr/>
+    <h2  class="w3-pannel  w3-padding w3-blue" id="2fa">👀 Two factor authentication</h2>
     <div>
       <p>I developed a two factor autehntication service for Time & Attenendce (T&A) for a UAE government entity. Whenever a user tried to login to the T&A windows app or mobile a code is sent to user registered email address. The life of the code is five minutes, if the user enterd the right code only then user is authenticated.</p>
 <p><b>Stack: </b>C#, ASP.NetCore, .Net Core, Entity framework, Postman, MS SQL Server/Oracle</p>
     </div>
-    <h2 id="suprema">👨‍💼 Suprema facial recognition</h2>
+    <hr/>
+    <h2  class="w3-pannel  w3-padding w3-blue" id="suprema">👨‍💼 Suprema facial recognition</h2>
     <div>
       <p>Its another REST API solution I developed to integrate the access control system with Suprema facial recognition system. It has features like new user registration, user facial authentication to access fcilities, Access card management.</p>
 <p><b>Stack: </b>C#, ASP.Net, .Net framework, Postman, MS SQL Server</p>
     </div>
-    <h2 id="discount">👋 Discount Code generation</h2>
+    <hr/>
+    <h2  class="w3-pannel  w3-padding w3-blue" id="discount">👋 Discount Code generation</h2>
     <div>
       <p>Its an open source REST API project I developed to generate discount code when a user do some shopping. The discount codes are generated based on the total value of the shopping.</p>
 <p><b>Stack: </b>Python, Flask, SQLite</p>
     </div>
-    <h2 id="visitor">👋 Visitor Access Service</h2>
+    <hr/>
+    <h2  class="w3-pannel  w3-padding w3-blue" id="visitor">👋 Visitor Access Service</h2>
     <div>
       <p>It is a very useful service that allowed other systems/business to connect with AEOS access control system. The service is developed using Open API so externl system can integrate easily. Initially it was developed for hotel's guests/visistors to enter into the Emmar Misr City. It is gernally a limited access for short duration. </p>
 <p><b>Stack: </b>C#, ASP.Net, .Net framework, Postman, AEOS</p>
-    </div>    
-<hr>
+    </div>  
+</div>  
+
+<div class="w3-center"><p>Made with 💗 using <a class=" w3-text-blue" target="_blank" href="https://www.w3schools.com/w3css/default.asp">w3.css</p></div>
   </body>
 </html>
